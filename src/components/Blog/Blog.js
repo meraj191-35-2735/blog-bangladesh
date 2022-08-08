@@ -3,12 +3,12 @@ import React from "react";
 const Blog = ({ blog }) => {
   const { title, description, image } = blog;
   return (
-    <div class="card bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
-      <div class="card-body">
-        <h2 class="card-title">{title}</h2>
+      <div className="card-body">
+        <h2 className="card-title">{title}</h2>
         <p>
           {description.length > 200
             ? description.slice(0, 200) + "..."
@@ -21,7 +21,7 @@ const Blog = ({ blog }) => {
           className="textarea textarea-primary"
           placeholder="Add a comment"
         ></textarea>
-        <button class="btn btn-outline btn-primary">Comment</button>
+        <button className="btn btn-outline btn-primary">Comment</button>
       </div>
     </div>
   );
